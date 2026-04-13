@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "unitcalc"
+version = "1.0.0"
+description = "Simple unit conversion library for length, mass, temperature, and time"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Nripanka Das", email = "nripankadas@gmail.com" }]
+keywords = ["units", "conversion", "length", "mass", "temperature", "time", "measurement"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/unitcalc"
+Repository = "https://github.com/nripankadas07/unitcalc"
+Issues = "https://github.com/nripankadas07/unitcalc/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
